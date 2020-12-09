@@ -15,7 +15,6 @@ struct Tuple
 
 DWORD WINAPI testThread(LPVOID lparam)
 {
-	//struct Tuple* nums = (Tuple*)lparam;
 	INT count = ((Tuple*)lparam)->a + ((Tuple*)lparam)->b;
 	for (INT i = 0; i < count; i++)
 	{
@@ -40,6 +39,6 @@ int main()
 
 	// Free the memory
 	delete ptuple;
-	system("pause");
+
 	return 0;
 }
